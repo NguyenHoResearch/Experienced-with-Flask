@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>2. Dynamic Templates with Jinja2</title>
+</head>
+<body>
+    <h1>Wellcom to my , {{ title }}</h1>
+    <p>This is blog page using flask and jinja2.</p>
+</body>
+</html> -->
+
+<!--------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        3. Passing Data Between Routes and Templates
+    </title>
+</head>
+<body>
+    <h1>Welcome to My Blog</h1>
+    {% for post in posts %}
+        <h2>{{post.title}}</h2>
+        <p>{{ post.content }}</p>
+        <a href="/post/{{post.id}}">Read More</a>
+        <hr>
+    {% endfor %}
+    </p>
+</body>
+</html>
+
